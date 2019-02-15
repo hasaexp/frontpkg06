@@ -1,0 +1,17 @@
+doctype
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    title Hello World!
+  body
+    h1 Hello World!
+    div
+      img(src=require('./images/nature01.jpg') alt="nature")
+      p 51.2KB以上の画像ファイルはそのままdistフォルダにコピーされる
+    div
+      img(src=require('./images/nature02.jpg') alt="nature")
+      p 51.2KB未満の画像ファイルはDataUrl形式で埋め込まれる
+    #app
+      div {{ greeting }}
+      div {{ totalPrice }}
+      mycomponent
